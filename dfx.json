@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "motokocamp_d6": {
+      "main": "src/motokocamp_d6/main.mo",
+      "type": "motoko"
+    },
+    "motokocamp_d6_assets": {
+      "dependencies": [
+        "motokocamp_d6"
+      ],
+      "frontend": {
+        "entrypoint": "src/motokocamp_d6_assets/src/index.html"
+      },
+      "source": [
+        "src/motokocamp_d6_assets/assets",
+        "dist/motokocamp_d6_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.8.4",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
